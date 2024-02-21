@@ -1,3 +1,9 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
 String NomeAluno;
 int nota1;
 int nota2;
