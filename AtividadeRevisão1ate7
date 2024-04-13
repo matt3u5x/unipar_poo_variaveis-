@@ -1,0 +1,84 @@
+1- O que é orientação a objetos e quais são seus princípios fundamentais?
+R:  é um paradigma de programação que nos permite organizar o código em unidades chamadas de objetos. 
+Cada objeto possui atributos (características) e métodos (ações). 
+Esses objetos podem interagir entre si, trocando mensagens e realizando ações específicas.
+
+Princípios
+1-Encapsulamento
+2-Abstração
+3-Polimorfismo
+4-Herança
+---------------------------------------------
+
+2-Quais são as vantagens da orientação a objetos em comparação com paradigmas de programação procedural?
+R:
+1-Reutilização de Código
+2-Modularidade
+3-Facilidade de Manutenção
+4-Flexibilidade
+5-Organização do Código
+6-Facilidade de Teste
+Em resumo, a POO oferece uma abordagem estruturada para criar códigos reutilizáveis,
+sistemas mais fáceis de manter e entender, e uma representação mais próxima da realidade.
+---------------------------------------------
+
+3- Explique o conceito de encapsulamento e como ele é implementado em linguagens de programação orientadas a objetos.
+R:O encapsulamento é um dos pilares fundamentais da programação orientada a objetos (POO). 
+Ele se refere à prática de esconder os detalhes internos de uma classe,
+mantendo os atributos (variáveis de instância) e métodos (funções) relacionados a essa classe protegidos e inacessíveis diretamente fora da classe.
+
+*Controle de Acesso
+O encapsulamento permite definir níveis de acesso para os membros de uma classe.
+
+*Getters e Setters
+Os getters (métodos de acesso) permitem recuperar o valor de um atributo.
+Os setters (métodos de modificação) permitem alterar o valor de um atributo.
+
+*Benefícios do Encapsulamento
+Segurança: Protege os dados contra acessos indevidos.
+Organização: Torna o código mais legível e manutenível.
+Reutilização: Facilita a reutilização de classes e objetos.
+--------------------------------------------
+
+4- Explique o conceito de classe e objeto em programação orientada a objetos, e como eles estão relacionados.
+
+*Classe
+Uma classe é uma estrutura que define as características e os comportamentos de um tipo de objeto.
+Ela serve como um modelo ou plano para criar objetos.
+Em outras palavras, a classe é como um projeto que descreve o que um objeto específico deve ter e fazer.
+Exemplo: Se pensarmos em uma classe chamada “Carro”, ela pode definir atributos como “marca”, “modelo” e “ano”, bem como métodos como “ligar” e “acelerar”.
+
+*Objeto
+Um objeto é uma instância ou exemplar de uma classe.
+Ele representa um elemento concreto do mundo real que possui as mesmas características e comportamentos definidos pela classe.
+Cada objeto criado a partir de uma classe é chamado de instância dessa classe.
+Exemplo: Se temos a classe “Carro”, um objeto específico pode ser uma instância desse carro, como um “Ferrari vermelho de 2022”.
+
+*Relação entre Classe e Objeto
+A classe é como um molde ou plano, enquanto o objeto é a concretização desse molde.
+A classe define o que o objeto deve ter e fazer, e o objeto é a realização dessas definições.
+Cada objeto criado a partir da mesma classe pode ter valores diferentes para seus atributos, mas compartilha os mesmos métodos e comportamentos.
+----------------------------------------------------------------------
+
+5- Qual é a importância dos construtores e métodos em uma classe em programação orientada a objetos?
+
+R: construtores e métodos são fundamentais para criar objetos bem definidos,
+com comportamentos específicos e estados consistentes.
+
+----------------------------------------------------------------------
+
+6- Quais são as diferenças entre métodos estáticos e métodos de instância em uma classe?
+
+R: Métodos de Instância são usados para operar em dados específicos de uma instância da classe, acessando e manipulando os atributos da instância através do self.
+
+Métodos Estáticos são usados quando
+a lógica não depende dos dados de uma instância específica e pode ser compartilhada por todas as instâncias da classe ou invocada diretamente a partir da classe.
+
+----------------------------------------------------------------------
+7- Como são tratados os conceitos de acoplamento e coesão na orientação a objetos e por que são importantes?
+R: Na orientação a objetos, acoplamento e coesão são conceitos fundamentais que descrevem a qualidade do design de um sistema.
+
+Acoplamento refere-se à medida em que as classes de um sistema dependem umas das outras. Quanto menor o acoplamento, menos uma classe depende das outras. Isso é importante porque classes altamente acopladas são difíceis de modificar sem afetar outras partes do sistema, o que pode levar a uma fragilidade no código e dificuldades de manutenção. Um baixo acoplamento facilita a manutenção, a evolução e a reutilização do código.
+
+Coesão refere-se à medida em que os elementos dentro de uma classe estão relacionados entre si. Quanto mais coesa uma classe, mais seus métodos e atributos estão relacionados e trabalham juntos para realizar uma única responsabilidade ou tarefa. Classes altamente coesas são mais fáceis de entender, testar e manter, pois cada classe tem um propósito claro e bem definido.
+
