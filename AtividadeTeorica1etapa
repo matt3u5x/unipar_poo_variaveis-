@@ -78,6 +78,21 @@ a lógica não depende dos dados de uma instância específica e pode ser compar
 7- Como são tratados os conceitos de acoplamento e coesão na orientação a objetos e por que são importantes?
 R: Na orientação a objetos, acoplamento e coesão são conceitos fundamentais que descrevem a qualidade do design de um sistema.
 
+8- Qual é o objetivo do metodo main?
+R: É o ponto de entrada para a execução de um programa. Iniciar um programa.
+
+9- Como ocorre a passagem de parâmetros em métodos de uma classe em programação orientada a objetos?
+R: 
+Na programação orientada a objetos, a passagem de parâmetros em métodos de uma classe pode ocorrer por valor ou por referência. Na passagem por valor, uma cópia do valor é passada, enquanto na passagem por referência,
+é passado um ponteiro ou referência para o objeto. O comportamento exato depende da linguagem de programação e do tipo de dados passado como parâmetro.
+
+10- Qual é a diferença entre os modificadores de acesso "public", "private" e "protected" em uma classe?
+R: "Public" permite acesso de qualquer lugar, "private" limita o acesso à própria classe e "protected" permite acesso por subclasses. Esses modificadores garantem encapsulamento e segurança do código.
+
+11- Qual é a importância da palavra-chave "this" em programação orientada a objetos e como ela é utilizada?
+R: "this" em programação orientada a objetos é utilizada para referenciar a instância atual de uma classe. Ela é útil para evitar ambiguidades entre variáveis locais e atributos,
+passar a própria instância como argumento para métodos e construtores, e para chamar construtores da mesma classe.
+
 Acoplamento refere-se à medida em que as classes de um sistema dependem umas das outras. Quanto menor o acoplamento, menos uma classe depende das outras. Isso é importante porque classes altamente acopladas são difíceis de modificar sem afetar outras partes do sistema, o que pode levar a uma fragilidade no código e dificuldades de manutenção. Um baixo acoplamento facilita a manutenção, a evolução e a reutilização do código.
 
 Coesão refere-se à medida em que os elementos dentro de uma classe estão relacionados entre si. Quanto mais coesa uma classe, mais seus métodos e atributos estão relacionados e trabalham juntos para realizar uma única responsabilidade ou tarefa. Classes altamente coesas são mais fáceis de entender, testar e manter, pois cada classe tem um propósito claro e bem definido.
