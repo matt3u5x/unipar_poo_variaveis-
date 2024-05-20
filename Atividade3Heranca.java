@@ -70,3 +70,101 @@ public class Calculadora {
     O método add(int a, int b, int c) também se chama add, mas recebe três inteiros e retorna a soma deles.
     O método add(double a, double b) é mais um método add, mas desta vez recebe dois números de ponto flutuante (double) e retorna a soma deles.
     Cada um desses métodos add realiza a mesma operação básica (adição), mas eles são aplicados a diferentes números de argumentos ou tipos de argumentos.*/
+
+------------
+------------    
+
+/* Teste Animal */
+    
+package br.unipar;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+public class AnimalTest {
+
+    @Test
+    public void testFacaSom() {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outputStream));
+
+        Animal animal = new Animal();
+        animal.facaSom();
+
+        System.setOut(originalOut);
+
+        String output = outputStream.toString().trim();
+        assertEquals("Som", output);
+    }
+}
+
+------------
+
+ /* Teste Calculadora */   
+
+package br.unipar;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+public class CalculadoraTest {
+
+    @Test
+    public void testAddDoisNumeros() {
+        Calculadora calc = new Calculadora();
+        int result = calc.add(2, 3);
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void testAddTresNumeros() {
+        Calculadora calc = new Calculadora();
+        int result = calc.add(1, 2, 3);
+        assertEquals(6, result);
+    }
+
+    @Test
+    public void testAddDoisDouble() {
+        Calculadora calc = new Calculadora();
+        double result = calc.add(2.5, 3.5);
+        assertEquals(6.0, result);
+    }
+
+    @Test
+    public void testAddDoisNumerosComZero() {
+        Calculadora calc = new Calculadora();
+        int result = calc.add(0, 5);
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void testAddNegativosNumeros() {
+        Calculadora calc = new Calculadora();
+        int result = calc.add(-1, -2);
+        assertEquals(-3, result);
+    }
+
+    @Test
+    public void testAddNumerosMisturados() {
+        Calculadora calc = new Calculadora();
+        int result = calc.add(-1, 2);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void testAddDoublesNegativosPositivos() {
+        Calculadora calc = new Calculadora();
+        double result = calc.add(-2.5, 3.5);
+        assertEquals(1.0, result);
+    }
+
+    @Test
+    public void testAddComDoubleZero() {
+        Calculadora calc = new Calculadora();
+        double result = calc.add(0.0, 5.0);
+        assertEquals(5.0, result);
+    }
+}
